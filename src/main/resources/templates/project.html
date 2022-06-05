@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8biONDG7C9T0IlQzAlh2nGPDznR0X4K8&callback=initMap&region=kr"></script>
+
+
+  <style>
+   .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:skyblue;
+      
+    }
+ 
+
+
+  </style>
+</head>
+<body>
+<h1>국립중앙박물관위치</h1>
+<div id="staticMap" style="width:320px;height:300px;"></div>    
+ <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6ab8dfe3dcf2d63511927e9a96d3eafe"></script>
+<script>
+// 이미지 지도에서 마커가 표시될 위치입니다 
+var markerPosition  = new kakao.maps.LatLng(37.523943,126.980498); 
+
+// 이미지 지도에 표시할 마커입니다
+// 이미지 지도에 표시할 마커는 Object 형태입니다
+var marker = {
+    position: markerPosition
+};
+
+var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
+    staticMapOption = { 
+        center: new kakao.maps.LatLng(37.523943,126.980498), // 이미지 지도의 중심좌표
+        level: 3, // 이미지 지도의 확대 레벨
+        marker: marker // 이미지 지도에 표시할 마커 
+    };    
+
+// 이미지 지도를 생성합니다
+var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
+</script>
+ 
+ <p>주소:04383 서울시 용산구 서빙고로 137
+(용산동6가 168-6)</p>
+ <h4>지하철:
+ 	4호선/경의중앙선(문산-용문)
+이촌역 2번출구 방향 '박물관 나들길'⇔박물관 서문
+이촌역 2번출구⇔박물관 서문
+ </h4>
+   
+
+</body>
+</html>
