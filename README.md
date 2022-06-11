@@ -18,4 +18,4 @@
 웹페이지수는 총 7개
 
 *메인페이지 대문*
-![메인페이지대문](./C:\Users\User\Desktop\etc)
+![메인페이지대문](etc/main.png)
