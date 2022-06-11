@@ -18,4 +18,5 @@
 웹페이지수는 총 7개
 
 *메인페이지 대문*
-![메인페이지대문](etc/main.png)
+
+![main](https://user-images.githubusercontent.com/103157500/173192095-e1cd81fd-0187-45a1-880c-627ebcbcae34.png)
